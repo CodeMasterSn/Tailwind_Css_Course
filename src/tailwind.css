@@ -1,0 +1,26 @@
+/*!@tailwind represente ici des import ou des directives */
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+/* customize les modules base et components */
+@layer base{
+    h2{
+        @apply text-rose-700 font-bold text-xl my-3
+    }
+
+    p{
+        @apply text-white text-sm
+    }
+
+    img{
+        @apply w-full
+    }
+}
+
+@layer components{
+    .card {
+        @apply max-w-md bg-slate-900 m-5 shadow-lg rounded-lg overflow-hidden 
+        @apply mobile:grid grid-cols-1
+    }
+}
